@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "organize-imports-cli": "^0.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -26,6 +25,7 @@
     "**/*{js, jsx, ts, tsx}": [
       "organize-imports-cli",
       "prettier --write",
+      "stylelint",
       "eslint --fix",
       "yarn test --watchAll=false --findRelatedTests --bail"
     ]
@@ -50,6 +50,8 @@
     "eslint-plugin-testing-library": "^4.10.1",
     "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2"
+    "organize-imports-cli": "^0.8.0",
+    "prettier": "^2.3.2",
+    "stylelint": "^13.13.1"
   }
 }
