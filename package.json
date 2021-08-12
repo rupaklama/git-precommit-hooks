@@ -22,9 +22,9 @@
   "lint-staged": {
     "**/*{js, jsx, ts, tsx, css, scss}": [
       "organize-imports-cli",
+      "prettier --write",
+      "eslint --fix",
       "stylelint",
-      "yarn lint",
-      "yarn prettier:fix",
       "yarn test --watchAll=false --findRelatedTests --bail"
     ]
   },
