@@ -15,17 +15,14 @@
     "eject": "react-scripts eject",
     "lint": "eslint src",
     "prettier:fix": "prettier --write .",
-    "prettier:check": "prettier --check ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "prettier:check": "prettier --check .",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "npm run prettier:fix",
-      "npm run lint"
+    "**/*{js, jsx, ts, tsx}": [
+      "yarn lint",
+      "yarn prettier:fix",
+      "yarn test --watchAll=false --findRelatedTests --bail"
     ]
   },
   "browserslist": {
@@ -46,7 +43,7 @@
     "@testing-library/user-event": "^12.1.10",
     "eslint-plugin-jest-dom": "^3.9.0",
     "eslint-plugin-testing-library": "^4.10.1",
-    "husky": "^7.0.1",
+    "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2"
   }
