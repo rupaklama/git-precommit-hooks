@@ -4,6 +4,7 @@ import logo from './logo.svg';
 
 function App() {
   const hello = '';
+  const bye = '';
 
   return (
     <div className='App'>
