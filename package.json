@@ -25,7 +25,6 @@
     "**/*{js, jsx, ts, tsx}": [
       "organize-imports-cli",
       "prettier --write",
-      "stylelint",
       "eslint --fix",
       "yarn test --watchAll=false --findRelatedTests --bail"
     ]
