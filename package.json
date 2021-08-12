@@ -27,7 +27,7 @@
       "organize-imports-cli",
       "prettier --write",
       "eslint --fix",
-      "stylelint",
+      "stylelint --fix",
       "yarn test --watchAll=false --findRelatedTests --bail"
     ]
   },
