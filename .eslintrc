@@ -3,8 +3,6 @@
   "extends": [
     "react-app",
     "react-app/jest",
-    "prettier",
-    "prettier/react",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended"
   ]
