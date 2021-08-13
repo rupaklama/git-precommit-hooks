@@ -17,8 +17,12 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{json,html,yaml,md,css,scss}": [
+    "*.{json,html,yaml,md}": [
       "prettier --write"
+    ],
+    "**/*{css, scss}": [
+      "prettier --write",
+      "yarn stylelint"
     ],
     "**/*{js, jsx, ts, tsx}": [
       "organize-imports-cli",
