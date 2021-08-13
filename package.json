@@ -13,9 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src",
-    "prettier:fix": "prettier --write .",
-    "prettier:check": "prettier --check .",
+    "stylelint": "stylelint '**/*.css' --fix",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -25,7 +23,7 @@
     "**/*{js, jsx, ts, tsx}": [
       "organize-imports-cli",
       "prettier --write",
-      "npx stylelint '**/*.css' --fix",
+      "stylelint",
       "eslint --fix",
       "yarn test --watchAll=false --findRelatedTests --bail"
     ]
